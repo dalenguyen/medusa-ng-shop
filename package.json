@@ -9,7 +9,6 @@
     "build": "npx nx run-many --target=build --projects=backend,admin,storefront",
     "affected:build": "nx affected:build",
     "graph": "nx graph"
-
   },
   "keywords": [
     "medusa",
@@ -18,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nrwl/angular": "^14.8.2",
     "nx": "^14.8.2"
   }
 }
