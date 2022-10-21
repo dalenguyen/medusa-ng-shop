@@ -19,5 +19,8 @@
   "devDependencies": {
     "@nrwl/angular": "^14.8.2",
     "nx": "^14.8.2"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.1"
   }
 }
