@@ -40,7 +40,7 @@ npx nx <target> <project>
 
 npx nx start backend
 npx nx start admin
-npx nx dev storefront
+npx nx dev ng-shop
 ```
 
 ### Build all project (NX)

@@ -1,0 +1,16 @@
+{
+    "projectType": "application",
+    "sourceRoot": "apps/ng-shop/src",
+    "prefix": "shop",
+    "targets": {
+      "build": {
+        "executor": "nx:run-commands",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "outputPath": "dist/apps/ng-shop",
+          "command": "pnpm --filter ng-shop build"
+        }
+      }
+    },
+    "tags": []
+  }
