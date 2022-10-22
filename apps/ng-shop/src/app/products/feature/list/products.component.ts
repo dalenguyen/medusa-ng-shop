@@ -1,11 +1,12 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { RouterLinkWithHref } from '@angular/router';
 import { ShopService } from '../../../shared/services';
 
 @Component({
   selector: 'shop-products',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, RouterLinkWithHref],
   template: `
    <!-- https://tailwindui.com/components/ecommerce/components/product-lists -->
   <div class="bg-white">
@@ -20,7 +21,7 @@ import { ShopService } from '../../../shared/services';
           <div class="mt-4 flex justify-between">
             <div>
               <h3 class="text-sm text-gray-700">
-                <a href="#">
+                <a  [routerLink]="[product.id]">
                   <span aria-hidden="true" class="absolute inset-0"></span>
                   {{product.title}}
                 </a>

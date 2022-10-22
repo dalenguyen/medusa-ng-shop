@@ -17,6 +17,7 @@ export interface ProductVariant {
 }
 
 export interface Product {
+    id: string
     "title": string,
     "subtitle": string | null,
     "description": string,
