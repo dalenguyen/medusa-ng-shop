@@ -1,8 +1,8 @@
-import './polyfills';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
-import {  RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app/shell/feature';
+import './polyfills';
 
 if (import.meta.env.PROD) {
   enableProdMode();
@@ -16,7 +16,7 @@ bootstrapApplication(AppComponent, {
           path: 'products',
           loadChildren: () => import('./app/products/feature').then(m => m.PRODUCTS_ROUTES)
         }
-      ], {initialNavigation: 'enabledBlocking'})
+      ], { initialNavigation: 'enabledBlocking' })
     )
   ]
 });
