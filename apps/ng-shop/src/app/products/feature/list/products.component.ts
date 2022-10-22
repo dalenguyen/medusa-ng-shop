@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
-import { ShopService } from '../../shared/services';
+import { ShopService } from '../../../shared/services';
 
 @Component({
   selector: 'shop-products',
